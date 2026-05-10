@@ -1,0 +1,34 @@
+# Core
+playwright>=1.40.0
+pyyaml>=6.0
+jsonschema>=4.20.0
+
+# MLLM APIs
+openai>=1.30.0
+anthropic>=0.30.0
+google-generativeai>=0.7.0
+
+# Visual evaluation
+scikit-image>=0.22.0
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.40.0
+Pillow>=10.0.0
+
+# Code analysis
+tree-sitter>=0.22.0
+
+# Environment
+python-dotenv>=1.0.0
+huggingface_hub>=0.20.0  # download_sources.py fetches reference_apps_manifest.csv from HF
+
+# OCR fallback for VFS Stage 5 when source repos aren't cloned (also requires
+# system tesseract: `brew install tesseract` or `apt install tesseract-ocr`)
+pytesseract>=0.3.10
+
+# Utilities
+requests>=2.31.0
+tqdm>=4.66.0
+pandas>=2.1.0
+numpy>=1.24.0
+matplotlib>=3.8.0
